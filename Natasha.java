@@ -41,6 +41,7 @@ public class Natasha {
     String name;
     String pronoun;
     User user = new User("./user.txt");
+    user.loadUser();
     name = user.getName();
     pronoun = user.getPronoun();
 

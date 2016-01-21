@@ -30,12 +30,14 @@ Scanner keyboard = new Scanner(System.in);
   private List<String> lines;
   private String[] fileLines;
 
-  public User(String filePath) {
+public User(String filePath) {
     this.name = name;
     this.pronoun = pronoun;
     this.fileLines = null;
-
     this.filePath = filePath;
+  }
+
+  public void loadUser() {
     File inputFile = new File(filePath);
 
     try {
